@@ -1,0 +1,21 @@
+[project]
+name = "my-ai-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { email = "Subash-d" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "jupyterlab>=4.6.6",
+    "pydantic-ai>=2.74.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+my-ai-agent = "pydantic_ai:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
